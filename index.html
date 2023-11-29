@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!--ligne obligatoire pour le responsive design. initial-scale = niveau de zoom de départ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Vegetables</title>
+    <!-- css nivo slider lignes 6 et  10 du modèle démo-->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <!-- fin nivo slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fondgris">
+        <header id="bandeau" class="container">
+            <!-- on met le nom du site ou l'adresse du site en alt-->
+            <a href="index.html">
+                <img id= "logo" src="images-fresh-vegetables/logo.png" alt="www.fresh-vegetables.com">
+            </a>
+            <nav id="menuPrincipal">
+                <!-- menu burger -->
+                <div id="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="choix">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#">Témoignagnes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- images du nivo slider -->
+        <!-- il faudrait que les images soient transparentes -->
+        <div class="slider-wrapper theme-default container">
+            <div id="slider" class="nivoSlider">
+                <img src="images-fresh-vegetables/legumes-slider/brocoli-slider.png"  alt="chou" data-transition="fade" title="#htmlcaption1"/>
+                <img src="images-fresh-vegetables/legumes-slider/chou-slider.png"  alt="brocoli" data-transition="fade" title="#htmlcaption2"/>
+                <img src="images-fresh-vegetables/legumes-slider/salade-slider.png"  alt="salade" data-transition="fade" title="#htmlcaption3"/>
+                
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <h1>Bienvenue chez Fresh</h1>
+                <h2>Le "Vegetables Shop"</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, impedit. 
+                    Pariatur modi inventore reiciendis sequi corrupti voluptatem nesciunt quidem, 
+                    illum distinctio incidunt, labore perferendis maxime. Ex possimus tempora saepe dignissimos.</p>
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <h2>Vive la verdure</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, impedit. 
+                    Pariatur modi inventore reiciendis sequi corrupti voluptatem nesciunt quidem, 
+                    illum distinctio incidunt, labore perferendis maxime. Ex possimus tempora saepe dignissimos.</p>
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <h2>Le vert c'est bon</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, impedit. 
+                    Pariatur modi inventore reiciendis sequi corrupti voluptatem nesciunt quidem, 
+                    illum distinctio incidunt, labore perferendis maxime. Ex possimus tempora saepe dignissimos.</p> 
+            </div>
+        </div>
+        <!-- fin nivo slider -->
+    </div>
+
+    <main id="contenu">
+        
+        <!-- On peut faire un espace dans le nom de la classe pour attribuer 2 classes -->
+        <article class="aPropos container">
+            <div class="texteArticle">
+                <h2>A propos</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quasi ipsa ratione? 
+                    Corrupti, omnis! Recusandae, delectus. 
+                    Sint nesciunt et sapiente error consequuntur incidunt ex qui assumenda,
+                     laboriosam quos, nobis dolorum, illum nisi voluptate. Dolore, minus!
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quasi ipsa ratione? 
+                    Corrupti, omnis! Recusandae, delectus. 
+                    Sint nesciunt et sapiente error consequuntur incidunt ex qui assumenda,
+                     laboriosam quos, nobis dolorum, illum nisi voluptate. Dolore, minus!
+                </p>
+                <a href="#">Toutes les infos</a>
+            </div>
+            <img src="images-fresh-vegetables/about.jpg" alt="legumes">
+        </article>
+        <!-- ==================fresh vegetables======================= -->
+        <h2 class="titreSansFond">Fresh <span class="vert">Vegetables</span></h2>
+        <article id="fresh" class="container">
+            <div class="texteFresh">
+                <h3>Meilleur "Vegetables Shop"</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quo incidunt, exercitationem ut nemo debitis fugit pariatur 
+                    unde modi voluptatibus earum nesciunt sequi fugiat magni 
+                    quisquam vero perferendis commodi rerum reiciendis suscipit 
+                    ipsa magnam. Reprehenderit voluptates perferendis, nulla saepe quidem odio.<br>
+                    Reprehenderit voluptates perferendis, nulla saepe quidem odio.
+                </p>
+            </div>
+            <figure class="absolu1">
+                <span class="particule">01</span>
+                <img src="images-fresh-vegetables/panier1.jpg" alt="panier1" id="panier1">
+            </figure>
+            <figure class="absolu2">
+                <span class="particule">02</span>
+                <img src="images-fresh-vegetables/panier2.jpg" alt="panier2" id="panier2">
+            </figure>
+        </article>
+        <!-- ====================bloc contact================== -->
+            <h2 class="titreSansFond">Nous <span class="vert">contacter</span></h2>
+        <div id="contact" class="container">
+            <form id="formulaire" action="envoyerForm.php" method="post">
+                <p><input type="text" name="nom" placeholder="Votre Nom"></p>
+                <p><input type="email" name="email" placeholder="Votre Email"></p>
+                <p><input type="tel" name="telephone" placeholder="Téléphone"></p>
+                <p><textarea name="message" placeholder="Message"></textarea></p>
+                <p><input type="submit" value="Envoyer"></p>
+            </form>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4027.30818648024!2d-2.7774766462020932!3d47.64739787727683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1ee660f85f%3A0x37b8927e9d6ad86b!2sGRETA%20de%20Bretagne%20Sud%20-%20Agence%20de%20Vannes!5e0!3m2!1sfr!2sfr!4v1701180190890!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- ============fin bloc contact=========== -->
+    </main>
+    <footer id="pied">
+        <aside id="bas" class="container">
+            <!-- figure = regroupe des médias (images, vidéos etc...) -->
+            <figure class="logoBas">
+                <img src="images-fresh-vegetables/logo.png" alt="Fresh Vegetables">
+            </figure>
+            <div class="colonne">
+                <h3>Adresse</h3>
+                <address>
+                    ZA des blés noirs<br>
+                    56000 Vannes<br>
+                    (+71 1234567890)<br>
+                    <!-- On met l'@ entre [] pour éviter que les robots ne récupèrent l'adresse mail -->
+                    fresh[@]gmail.com
+                </address>
+            </div>
+            <div class="colonne">
+                <h3>Nous Suivre</h3>
+                <!-- Pour récupérer des icônes, utiliser fontawesome.com -->
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="colonne">
+                <h3>Newsletter</h3>
+                <form action="newsletter.php" method="post">
+                    <p><input type="email" name="email newsletter" placeholder="Tapez votre email"></p>
+                    <p><input type="submit" value="S'INSCRIRE"></p>
+                </form>
+            </div>
+        </aside>
+        <div id="copyright">
+            <p>Copyright &copy; 2023 Greta Bretagne Sud - Exercice CDUI</p>
+        </div>
+    </footer>
+
+    <!-- lignes de demo 30 à 36 -> scripts du slider -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        // affichage du manu au clic sur le burger
+        $("#menuPrincipal #burger i").click(function() {
+            $("#menuPrincipal ul").slideToggle(500)
+        });
+    </script>
+
+</body>
+</html>
