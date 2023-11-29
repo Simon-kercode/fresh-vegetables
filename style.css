@@ -210,7 +210,73 @@ body {
     border-radius: 50px;
 }
 
-/* ===============fin fresh vegetables==================== */
+/* ===============témoignages==================== */
+#temoignages {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 610px;
+
+    background-image: url(images-fresh-vegetables/temoignages/fond-temoins.png);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+
+    margin-top: 40px;
+}
+
+#temoignages .titreTemoignage {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contenu-temoignage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 700px;
+    
+    background-color:rgba(67, 150, 15, 0.7);
+
+    padding: 40px 25px 40px 25px;
+} 
+
+.photo-temoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 10px;
+}
+
+.joahna {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.guillemet {
+    width: 30px;
+}
+
+.texte-temoignage {
+    color: #fff;
+    margin-left: 50px;
+}
+
+h4, h5 {
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+h5 {
+    margin-bottom: 30px;
+}
+/* ===========contact============ */
 #contact {
     background-color: white;
     margin-top: 40px;
@@ -341,6 +407,27 @@ body {
 .theme-default .nivoSlider {
     box-shadow: none;
 }
+
+/* .nivo-caption2 {
+	left:50px;
+	bottom:0;
+    top: 130px;
+	background: transparent;
+	color: black;
+	width:40%;
+	padding: 5px 10px;
+	opacity: 1;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+}
+.nivo-caption2 h2 {
+    color: var(--couleur-principale);
+    font-size: 2.8rem;
+    margin: 32px 0;
+}
+.theme-default .nivoSlider2 {
+    box-shadow: none;
+} */
 
 /* ===============media queries============== */
 @media screen and (max-width: 1050px) {
